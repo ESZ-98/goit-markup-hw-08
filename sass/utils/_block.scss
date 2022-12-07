@@ -1,0 +1,19 @@
+.header__block {
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    background: $brandColor;
+    border-radius: 2px;
+    transform: translateY(29px);
+  }
+}
+
+.header__block--index::after {
+  width: 53px;
+}
+
+.header__block--portfolio::after {
+  width: 58px;
+}

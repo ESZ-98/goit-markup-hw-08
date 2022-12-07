@@ -1,0 +1,49 @@
+.modal__consent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.03em;
+  color: $textSecondary;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 24px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
+
+  .modal__svg {
+    position: absolute;
+    height: 15px;
+    width: 16px;
+    border: 2px solid $textPrimary;
+    border-radius: 2px;
+    fill: $darkBackgroundText;
+    transition: border, background-color $transitionDefault;
+  }
+
+  .modal__checkbox {
+    position: absolute;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked ~ .modal__span .modal__svg {
+      border: none;
+      border-radius: 2px;
+      background-color: $brandColor;
+    }
+
+    &:focus-within {
+      border-color: $brandColor;
+      fill: $brandColor;
+      outline-width: 0;
+    }
+  }
+}

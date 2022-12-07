@@ -1,0 +1,52 @@
+.newsletter {
+  @media screen and (max-width: 1199px) {
+    margin-top: 48px;
+  }
+
+  &__form {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $darkBackgroundText;
+    margin-top: 12px;
+  }
+
+  &__input {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 16px;
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.our-clients {
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__icon {
+    border: 1px solid $defaultPreHover;
+    height: 92px;
+    flex-basis: 210px;
+    padding: 16px 52px;
+    border-radius: 4px;
+    cursor: pointer;
+    fill: $defaultPreHover;
+    transition: color, border, fill $transitionDefault;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $brandColor;
+      fill: $brandColor;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 226px;
+      padding: 16px 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: 170px;
+      padding: 16px 32px;
+    }
+  }
+}

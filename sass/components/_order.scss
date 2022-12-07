@@ -1,0 +1,57 @@
+.order {
+  background-color: $darkBG;
+  color: $darkBackgroundText;
+  padding: 118px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-position: 50% 50%;
+  background-size: auto, auto;
+  max-width: 100vw;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/banner-mob@1x.jpg');
+
+  & {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/banner-mob@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 118px 0;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/banner-tab@1x.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/banner-tab@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 200px 0;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/banner-pc@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/banner-pc@2x.jpg);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.social-media {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $darkBackgroundText;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    fill: $darkBackgroundText;
+    transition: color, fill, background $transitionDefault;
+
+    &:hover,
+    &:focus {
+      background: $brandColor;
+      fill: $darkBackgroundText;
+    }
+  }
+}

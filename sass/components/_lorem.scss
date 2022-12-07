@@ -1,0 +1,58 @@
+.lorem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    background: $brightBG;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 190px;
+
+    @media screen and (min-width: 768px) {
+      padding: 25px 142px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 25px 100px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    color: $textSecondary;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding: 0;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+}
