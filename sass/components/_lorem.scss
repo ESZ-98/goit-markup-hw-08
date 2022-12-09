@@ -40,14 +40,18 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding: 0;
-    width: 450px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
-      width: 354px;
+      max-width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      max-width: 270px;
     }
   }
 
